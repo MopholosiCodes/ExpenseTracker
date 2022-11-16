@@ -1,0 +1,15 @@
+.like-container {
+    border: black 2px solid;
+    border-radius:20px;
+    box-shadow: 5px 10px #888888;
+    margin: 20px;
+    padding: 20px;
+
+    display: flex;
+    width:fit-content;
+}
+
+.like {
+    color: blue;
+    font-size: 100px;
+}

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react"
+import { Expenses } from "./components/Expense/Expenses"
+import { NewExpense } from './components/NewExpense/NewExpense';
 
 function App() {
+  const [expenses, setExpenses] = useState([])
+  // note: figured out that this is the correct way to update state
+  const AddExpense = newExpense => setExpenses(prevState => [newExpense, ...prevState])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Mo's Expenses</h1>
       </header>
+      <NewExpense onAddNewExpense={AddExpense} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
 
 export default App;
+

@@ -1,0 +1,18 @@
+input {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

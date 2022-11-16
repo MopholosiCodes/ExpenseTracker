@@ -1,0 +1,22 @@
+.heart-container {
+    border: black 2px solid;
+    border-radius:10px;
+    box-shadow: 5px 10px #888888;
+    margin: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+
+    justify-content:center;
+}
+
+.heart {
+    color: red;
+    font-size: 70px;
+}
+
+.restart-button {
+    color: black;
+}

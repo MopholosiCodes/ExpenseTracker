@@ -1,0 +1,32 @@
+.star-container {
+    border: black 2px solid;
+    border-radius:20px;
+    box-shadow: 5px 10px #888888;
+    margin: 20px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.star-active {
+    color: gold;
+    font-size: xx-large;
+}
+
+.star-inactive {
+    color: gray ;
+    font-size: xx-large;
+}
+
+.star-inactive:hover {
+    color: gold
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: white
+}

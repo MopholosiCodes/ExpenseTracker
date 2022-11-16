@@ -1,0 +1,21 @@
+.progressBar-container {
+    
+    border: black 2px solid;
+    border-radius:20px;
+    box-shadow: 5px 10px #888888;
+    margin: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+}
+
+.progress-buttons {
+    color: blue;
+    font-size: xx-large;
+}
+
+.progress-bar {
+    margin-bottom: 20px;
+}
